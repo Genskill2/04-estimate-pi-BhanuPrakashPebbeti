@@ -18,7 +18,7 @@ float mc_pi(int i)
             inside+=1;
         }
     }
-    ratio = inside/(float)i;
+    ratio = (float)inside/(float)i;
     ratio *= 4;
     return ratio;
 }
