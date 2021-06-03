@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int i);
+float wallis_pi(int i)
 {
     float a = 1.0;
     float b;
