@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include <math.h>
 
+float frandom() {
+  long int q = random();
+  float ret = (float)q/(float)RAND_MAX;
+  return ret;
+}
+
 float mc_pi(int i)
 {
     int inside = 0;
@@ -21,12 +27,6 @@ float mc_pi(int i)
     ratio = (float)inside/(float)i;
     ratio *= 4;
     return ratio;
-}
-
-float frandom() {
-  long int q = random();
-  float ret = (float)q/(float)RAND_MAX;
-  return ret;
 }
 
 int main(void) {
