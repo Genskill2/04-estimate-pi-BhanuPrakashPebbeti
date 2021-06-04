@@ -41,7 +41,7 @@ int main(void) {
 float mc_pi(int n){
 	int points_in_circle=0;
 	float x,y;
-  float pi,distance;
+  	float pi,distance;
 	for(int i=0;i<n;i++){
 		x=frandom();
 		y=frandom();
@@ -50,6 +50,6 @@ float mc_pi(int n){
 			points_in_circle+=1;
 		}
 	}
-	float pi=(float)points_in_circle/(float)n;
+	pi=(float)points_in_circle/(float)n;
 	return 4*pi;
 }
